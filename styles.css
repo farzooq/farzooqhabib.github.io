@@ -1,42 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-nav {
-    background-color: #444;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-section {
+.left-pane {
+    width: 30%;
+    height: 100vh;
+    background-color: #E0EBF0;
+    float: left;
     padding: 20px;
-    margin: 20px;
-    background-color: #fff;
+}
+
+.right-pane {
+    width: 70%;
+    height: 100vh;
+    float: left;
+    padding: 20px;
+}
+
+.headshot {
+    /* Styling for headshot */
+}
+
+.name {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.about-section {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.skills-section {
+    margin-top: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.projects-heading {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
     border-radius: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.project-image {
+    /* Styling for project image */
+}
+
+.project-title {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
 }
