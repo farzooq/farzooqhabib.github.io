@@ -19,7 +19,15 @@ body {
 }
 
 .headshot {
-    /* Styling for headshot */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headshot img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    object-fit: cover; /* Ensures the image fills the container */
 }
 
 .name {
