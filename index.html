@@ -1,56 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Farzooq Habib's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/templatemo-upright.css">
 </head>
 
-<body>
-    <div class="left-pane">
-        <div class="headshot">
-            <img src="dp.jpeg" alt="Farzooq Habib">
-        </div>
-        <div class="name">Farzooq Habib</div>
-        <div class="description">Purdue | Data Scientist | Fulbright Scholar</div>
-        <div class="social-links">
-            <a href="linkedin.com/in/farzooqhabib/"><img src="linkedin-black.png" alt="LinkedIn"></a>
-            <a href="github.com/farzooq"><img src="github-black.png" alt="GitHub"></a>
-            <a href="your-tableau-url"><img src="tableau-black.png" alt="Tableau"></a>
-        </div>
-        <div class="about-section">About Me</div>
-        <div class="skills-section">
-            <div class="skill-tag">Python</div>
-            <div class="skill-tag">MySQL</div>
-            <div class="skill-tag">Tableau</div>
-            <div class="skill-tag">Generative AI</div>
-	    <div class="skill-tag">Minitab</div>
-	    <div class="skill-tag">SAS</div>
- 	    <div class="skill-tag">Statistical Analysis</div>
-        </div>
-    </div>
-    <div class="right-pane">
-        <div class="projects-heading">Projects</div>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project">
-                <div class="project-image">
-                    <!-- Project image here -->
-                </div>
-                <div class="project-title">Project 1</div>
-                <div class="project-tags">
-                    <div class="tag">Tag 1</div>
-                    <div class="tag">Tag 2</div>
-                    <!-- Add more tags as needed -->
-                </div>
-                <div class="project-description">Project 1 description</div>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar"> 
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-box">
+                            <img src="img/dp.jpg" alt="profile" style="max-height: 100%; border-radius: 50%;">
+                        </div>
+			<h2>Farzooq Habib</h2>
+			<h5>Data Scientist</h5>
+			<br>                
+                        <ul id="tm-main-nav">
+                            <li class="nav-item">                                
+                                <a href="#about" class="nav-link current">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-user nav-icon"></i>
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#resume" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-file-alt nav-icon"></i>
+                                    Resume
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-code nav-icon"></i>
+                                    Projects
+                                </a>
+                            </li>
+			    <li class="nav-item">
+                                <a href="#experience" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-briefcase nav-icon"></i>
+                                    Experience
+                                </a>
+                            </li>
+			    <li class="nav-item">
+                                <a href="#education" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-graduation-cap nav-icon"></i>
+                                    Education
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-envelope nav-icon"></i>
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="mb-3 tm-mt-100">
+                        Made with &#x1F525; at Purdue
+                    </footer>
+                </nav>
             </div>
-            <!-- Add more projects using the same structure -->
-        </div>
-    </div>
-</body>
+            
+            <div class="tm-main">
+                <!-- About section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div>                   
+                    <section id="about" class="tm-section">
+                        <h2 class="tm-text-primary">Howdy and Welcome to my portfolio!</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-12 tm-col-home mb-4">
+                                <div class="tm-text-container">                              
+                                    <p>
+                                        I'm many things but primarily a problem solver. I love logic building and cracking problems that seem daunting. This is the core reason I joined Business Analytics program to continue doing what I love.
+				    </p>
+				    <p>
+					I have 8 years of experience working in multiple sectors including digital solutions, power generation, healthcare, finance, power distribution, urban planning, and public policy. 
+					Throughout my professional experience, I have worked extensively with data starting from collecting it, processing it, analyzing it and visualizing it to derive actionable insights for stakeholders. 
+				    </p>
+				    <p>
+					Recently, I have upskilled myself by learning generative AI, applying advanced machine learning methods and cloud deployments. I will be graduating in August and looking forward to exciting opportunities to collaborate and create value. 
+				    </p>
+				    <p>
+					Fun Fact: I have cofounded three companies; an EV bike, an edtech platform and a management consulting firm. 
+                                    </p>
+                                </div>                                
+                            </div>                                                                   
+                        </div>
+                        <div class="row">                            
+                            <div class="col-lg-12 tm-col-home mb-4">
+                                <div class="tm-text-container">
+                                    <h5 class="tm-text-primary">Technical Skills</h5>  
+                                    <p>
+                                      Python [Huggingface, TensorFlow, nltk, selenium, beautifulsoup, scikit-learn, spacy, seaborn] 
+				      Generative AI, MySQL, AWS, Tableau, Minitab, SAS, Statistical analysis, @RISK.    
+                                    </p>
+                                </div>                                    
+                                <div class="tm-text-container">
+                                    <h5 class="tm-text-primary">Soft Skills</h5>  
+                                    <p>
+                                        Storytelling, Project management (Agile), Business insights, Trello, Smartsheet, Strategy, Negotiations.
+                                    </p>
+                                </div>                                    
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-</html>
+		<!-- Resume section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04b.jpg"></div>                   
+                    <section id="resume" class="tm-section">
+                        <h2 class="tm-text-primary">Resume</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-12 tm-col-home mb-4">
+                                <div class="tm-text-container">                              
+                                    <a href="Farzooq Habib Resume_vDS.pdf" class="btn btn-primary" download="Farzooq_Habib_Resume.pdf">Download Resume</a>
+                                </div>                                
+                            </div>                                                                   
+                        </div>
+                    </section>
+                </div>
+
+		<!-- Projects section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-03.jpg"></div>
+                    <section id="projects" class="tm-section">
+                        <h2 class="tm-text-primary">Projects</h2>
+                        <hr class="mb-5">
+
+                        <div class="row">
+                            <div class="col-lg-12 tm-col-home mb-4">
+                                <div class="tm-text-container">                              
+                                    <p>
+					From designing predictive models to tackling unstructured data and optimizing networks, my portfolio reflects a passion to applying cutting-edge technologies for tangible business improvements.
+				    </p>
+                                </div>                                
+                            </div>                                                                   
+                        </div>
+
+                        <div class="mt-1">
+                            <div class="tm-carousel">
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/project-01.png" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Generate Culturally Sensitive Avatars</h4>
+                                        <p>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/project-02.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Predict Sales for Walmart</h4>
+                                        <p>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-03.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Market Segmentation for Airbnb</h4>
+                                        <p>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-01.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Market Penetration for GAP</h4>
+                                        <p>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-02.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Improved Classification for Craigslist</h4>
+                                        <p>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-03.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Need to Change</h4>
+                                        <p>Need to add description of project.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-01.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Need to Change</h4>
+                                        <p>Need to add description of project.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-02.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Need to Change</h4>
+                                        <p>Need to add description of project.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-03.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <ul class="tm-social">
+                                                <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h4 class="mb-2 tm-text-secondary tm-about-subtitle">Need to Change</h4>
+                                        <p>Need to add description of project.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+		<!-- Experience section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpeg"></div>                   
+                    <section id="experience" class="tm-section">
+                        <h2 class="tm-text-primary">Experience</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/sil.png" alt="SIL Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="https://www.sil.org/" style="color: rgb(0, 0, 0); text-decoration: none;" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">SIL International</a></b>
+				<span style="float: right;">West Lafayette, IN</span>
+				</h5>
+              			<h6><p><em>Student Data Science Consultant</em>
+				<span style="float: right;">January 2023 - May 2024</span>
+				</p></h6>
+              			<ul><li>Built an AWS based generative AI model for creating culturally sensitive avatars for indigenous communities enhancing scale and speed of content generation and reducing cost by $510,000.</li></ul>
+            		    </div>
+                        </div>
+                        <div class="row">                            
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/gokp.png" alt="GoKP Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="https://www.finance.gkp.pk/" style="color: rgb(0, 0, 0)" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">Government of Khyber Pakhtunkhwa</a></b>
+				<span style="float: right;">Peshawar, Pakistan</span>
+				</h5>
+              			<h6><p><em>Associate</em>
+				<span style="float: right;">November 2019 - August 2023</span>
+				</p></h6>
+              			<ul>
+				<li>Designed an interactive visualization dashboard through Tableau for the Government during COVID-19; data-driven strategy boosted testing from 40 tests/day to 5,500 tests/day.</li>
+				<li>Evaluated projects portfolio of the Government having a total cost of $4 billion to assess its impact and synthesize actionable insights for stakeholders resulting in savings of $800 million.</li>
+				<li>Conducted in-depth financial analysis of revenue from hydropower stations through implementation of leading and lagging indicators resulting in additional revenue of $3 billion.</li>
+				</ul>
+            		    </div>
+                        </div>
+			<div class="row">                            
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/engro.png" alt="Engro Digital Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="http://empiric.ai/" style="color: rgb(0, 0, 0)" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">Empiric AI (Formerly Engro Digital)</a></b>
+				<span style="float: right;">Lahore, Pakistan</span>
+				</h5>
+              			<h6><p><em>Instrumentation & Networks Engineer</em>
+				<span style="float: right;">August 2016 - September 2019</span>
+				</p></h6>
+              			<ul>
+				<li>Led a team of 5 engineers to deploy predictive modelling for detecting reliability issues at 25 power plants across MENA region resulting in 2-6% increased availability.</li>
+				<li>Developed digital solution using machine learning (XGBoost) to optimize performance of cooling tower at power plant resulting in reduction of energy consumption by 5.5%.</li>
+				<li>Engineered system architecture securely integrating OT system with IT system, enabling real-time data transfer to Predix Cloud; enabled implementation of three suites of digital solutions.</li>
+				<li>Deployed IIoT solutions to improve operations management of auxiliary processes at fertilizer and power plants utilizing Predix Cloud, OPC DA and machine learning.</li>
+				</ul>
+            		    </div>
+                        </div>
+			<div class="row">                            
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/engro.png" alt="Engro Energy Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="https://www.engroenergy.com/engro-powergen-qadirpur-limited/" style="color: rgb(0, 0, 0)" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">Engro Powergen Qadirpur Ltd.</a></b>
+				<span style="float: right;">Ghotki, Pakistan</span>
+				</h5>
+              			<h6><p><em>Instrumentation & Controls Engineer</em>
+				<span style="float: right;">August 2015 - July 2016</span>
+				</p></h6>
+              			<ul>
+				<li>Validated and optimized performance of physics-based power plant performance model to increase plant net efficiency by 0.6%.</li>
+				<li>Created interactive visualization dashboard using Excel macros to report key KPIs for power plant performance resulting in growth in reporting frequency to management by 50%.</li>
+				<li>Led a project to integrate and report off-site water pumping station parameters using Siemens PLC resulting in decrease in energy consumption by 6.1%.</li>
+				</ul>
+            		    </div>
+                        </div>
+                    </section>
+                </div>
+
+		<!-- Education section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-05.jpg"></div>                   
+                    <section id="education" class="tm-section">
+                        <h2 class="tm-text-primary">Education</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/purdue.jpg" alt="Purdue Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="https://business.purdue.edu/" style="color: rgb(0, 0, 0); text-decoration: none;" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">Purdue University</a></b>
+				<span style="float: right;">West Lafayette, IN</span>
+				</h5>
+              			<h6><p><em>Master of Science in Business Analytics</em>
+				<span style="float: right;">August 2023 - July 2024</span>
+				</p></h6>
+              			<p><b>Coursework:</b> Data Mining, Web Data Analytics, Analyzing Unstructured Data, Machine Learning, Cloud Computing</p>
+            		    </div>
+                        </div>
+			<br>
+                        <div class="row">                            
+                            <div class="col-md-12">
+              			<h5>
+				<img src="img/giki.png" alt="GIKI Logo" style="max-height: 40px; margin-right: 10px;">
+				<b><a href="https://giki.edu.pk/fee/" style="color: rgb(0, 0, 0)" onmouseover="this.style.color='#006699'; this.style.textDecoration='underline';" onmouseout="this.style.color='#000000'; this.style.textDecoration='none';">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</a></b>
+				<span style="float: right;">Swabi, Pakistan</span>
+				</h5>
+              			<h6><p><em>Bachelor of Science in Electronics Engineering</em>
+				<span style="float: right;">August 2011 - June 2015</span>
+				</p></h6>
+              			<p><b>Coursework:</b> Parallel Processing, Computer Programming, Probability, Calculus, Microprocessor</p>
+            		    </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Contact section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpg"></div>
+                    <div id="contact" class="tm-section">
+                        <h2 class="tm-text-primary">Contact Me</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-xl-6 tm-contact-col-l mb-4">
+                                <form id="contact-form" action="" method="POST" class="tm-contact-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="subject" name="subject" class="form-control rounded-0" placeholder="Subject" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                                    </div>
+            
+                                    <div class="form-group tm-text-right">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6 tm-contact-col-r">
+                                <!-- Map -->
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe width="100%" height="340" id="gmap_canvas"
+                                            src="https://maps.google.com/maps?q=West+Lafayette,+IN&z=13&t=&ie=UTF8&iwloc=&output=embed&ll=40.4259,-86.9081"
+                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                </div>
+            
+                                <!-- Address -->
+                                <address>
+                                    West Lafayette, IN<br>
+                                    47906<br>
+                                </address>
+            
+                                <!-- Links -->
+                                <ul class="tm-contact-links mb-4">
+                                    <li class="mb-2">
+                                        <a href="tel:+17654091303">
+                                            <i class="fas fa-phone mr-2 tm-contact-link-icon"></i>
+                                            Tel: +1 (765) 409-1303
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:habib15@purdue.edu">
+                                            <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
+                                            Email: habib15@purdue.edu
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="tm-contact-social">
+                                    <li><a href="https://www.linkedin.com/in/farzooqhabib/" class="tm-social-link"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/farzooq" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://your-tableau-profile-url" class="tm-social-link"><i class="fab fa-tableau"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-section-wrap tm-copyright row">
+                    <div class="col-12">
+                        <div class="text-right">
+                            Copyright 2024
+                        </div> 
+                    </div>
+                </div>                 
+            </div> <!-- .tm-main -->                      
+        </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+    <script src="js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
+    <script src="js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ -->
+    <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html> 
